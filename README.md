@@ -110,6 +110,24 @@ Build an API inside the `api` folder with endpoints for:
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain the difference between Relational Databases and SQL.
+
+  sql is a query language not a type of database, how ever the difference between
+  other sql data base types generally is just that relation data bases can hold key value pairs or ids that point to entirely seperate tables and for that reason this
+  kind of data base is inherently well organized 
+  (if you pay enough attention creating it :D)
+
 2. Why do tables need a Primary Key?
+  
+  the primary key keeps track of all the items that table is responsible for if it does
+  not have a primary key then youre making something closer to a document based - database
+
 3. What is the name given to a table column that references the Primary Key on another table?
+
+  that would be a foreign key, or pointer key. super cool aspect of this type of DB
+
 4. What do we need in order to have a _many to many_ relationship between two tables?
+
+  you would need something of a type thats name is broad and general,
+  and each of these 'types' would refer to multiple other types or objects
+
+  like a sand on a beach is to people. many grains, many people.

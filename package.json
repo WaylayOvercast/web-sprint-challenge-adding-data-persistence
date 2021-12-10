@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
+    "seed": "npx knex seed:run",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "latest": "knex migrate:latest",
+    "rollback": "npx knex migrate:rollback",
+    "migrate": "npx knex migrate:make db-tables",
     "test": "cross-env NODE_ENV=testing jest --verbose --runInBand --silent"
   },
   "repository": {
@@ -14,6 +20,14 @@
     "cross-env": "7.0.3",
     "eslint": "8.4.1",
     "jest": "27.4.3",
+    "knex-cleaner": "^1.3.1",
+    "nodemon": "^2.0.15",
     "supertest": "6.1.6"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "knex": "^0.95.14",
+    "sqlite3": "^5.0.2"
   }
 }
